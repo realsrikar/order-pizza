@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Order Your Pizza!</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<main>
+		<div class="questions">
+			<div class="auto-center-pr" data-current-color="blue">
+				<div class="auto-center">
+					<form>
+						<div data-page="0" data-page-src="img/pizza.jpeg" data-bg="blue">
+							<h1>Order your
+								<em>amazing</em> pizza!</h1>
+							<p>You can trust us with your pizza. We will ever choose the best ingredients. Even with such high quality food, we keep
+								out prices down so you can experience the best food without breaking the bank.</p>
+						</div>
+						<div data-page="1" class="hide" data-bg="red" data-page-src="img/crust.jpeg">
+							<h1>Crust</h1>
+							<div id="rg1" role="radiogroup">
+								<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+									<input type="radio" role="radio" tabindex="0" name="crust" value="Thin Crust" class="mdl-radio__button">
+									<span class="mdl-radio__label">Thin Crust</span>
+								</label>
+								<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+									<input type="radio" role="radio" tabindex="0" name="crust" value="Flatbread Crust" class="mdl-radio__button">
+									<span class="mdl-radio__label">Flatbread Crust</span>
+								</label>
+								<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+									<input type="radio" role="radio" tabindex="0" name="crust" value="Thicc Crust" class="mdl-radio__button">
+									<span class="mdl-radio__label">Thicc Crust</span>
+								</label>
+								<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+									<input type="radio" role="radio" tabindex="0" name="crust" value="Focaccia" class="mdl-radio__button">
+									<span class="mdl-radio__label">Focaccia</span>
+								</label>
+								<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+									<input type="radio" role="radio" tabindex="0" name="crust" value="Traditional Pan Pizza" class="mdl-radio__button">
+									<span class="mdl-radio__label">Traditional Pan Pizza</span>
+								</label>
+							</div>
+
+						</div>
+						<div data-page="2" class="hide" data-bg="teal" data-page-src="img/cheese.jpeg">
+							<h1>Cheese?</h1>
+							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+								<input type="checkbox" class="mdl-checkbox__input" value="Mozzerlaa" name="cheese">
+								<span class="mdl-checkbox__label">Mozzerlaa</span>
+							</label>
+							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+								<input type="checkbox" class="mdl-checkbox__input" value="Cheddar Cheese" name="cheese">
+								<span class="mdl-checkbox__label">Cheddar Cheese</span>
+							</label>
+							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+								<input type="checkbox" class="mdl-checkbox__input" value="Provolone" name="cheese">
+								<span class="mdl-checkbox__label">Provolone</span>
+							</label>
+							<hr>
+							<h2>How much cheese? 10 being the most, 0 being the least.</h2>
+							<p class="range-field" data-range-value="5">
+								<input type="range" class="mdl-slider mdl-js-slider" min="0" max="10" step=".1" value="5" style="border: 0;" name="cheeserange"
+								/>
+							</p>
+						</div>
+						<div data-page="3" class="hide" data-bg="yellow" data-page-src="img/meat.jpeg">
+							<h1>Meats?</h1>
+							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+								<input type="checkbox" class="mdl-checkbox__input" value="Salami" name="meat">
+								<span class="mdl-checkbox__label">Salami</span>
+							</label>
+							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+								<input type="checkbox" class="mdl-checkbox__input" value="Pepperoni" name="meat">
+								<span class="mdl-checkbox__label">Pepperoni</span>
+							</label>
+							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+								<input type="checkbox" class="mdl-checkbox__input" value="Sauceage" name="meat">
+								<span class="mdl-checkbox__label">Sauceage</span>
+							</label>
+							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+								<input type="checkbox" class="mdl-checkbox__input" value="Chicken" name="meat">
+								<span class="mdl-checkbox__label">Chicken</span>
+							</label>
+							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+								<input type="checkbox" class="mdl-checkbox__input" value="Lamb" name="meat">
+								<span class="mdl-checkbox__label">Lamb</span>
+							</label>
+						</div>
+						<div data-page="4" class="hide" data-bg="orange" data-page-src="img/veg.jpeg">
+							<h1>Veggies</h1>
+							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+								<input type="checkbox" class="mdl-checkbox__input" value="Pineapple" name="veggie">
+								<span class="mdl-checkbox__label">Pineapple</span>
+							</label>
+							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+								<input type="checkbox" class="mdl-checkbox__input" value="Onion" name="veggie">
+								<span class="mdl-checkbox__label">Onion</span>
+							</label>
+							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+								<input type="checkbox" class="mdl-checkbox__input" value="Cauliflower" name="veggie">
+								<span class="mdl-checkbox__label">Cauliflower</span>
+							</label>
+							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+								<input type="checkbox" class="mdl-checkbox__input" value="Mushroom" name="veggie">
+								<span class="mdl-checkbox__label">Mushroom</span>
+							</label>
+							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+								<input type="checkbox" class="mdl-checkbox__input" value="Tomato" name="veggie">
+								<span class="mdl-checkbox__label">Tomato</span>
+							</label>
+							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+								<input type="checkbox" class="mdl-checkbox__input" value="Lettuce" name="veggie">
+								<span class="mdl-checkbox__label">Lettuce</span>
+							</label>
+							<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+								<input type="checkbox" class="mdl-checkbox__input" value="Peppers" name="veggie">
+								<span class="mdl-checkbox__label">Peppers</span>
+							</label>
+
+						</div>
+						<div data-page="5" class="hide" data-bg="blue-grey" data-page-src="img/drink.jpeg">
+							<h1>Drink?!</h1>
+							<div id="rg2" role="radiogroup">
+								<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+									<input type="radio" role="radio" tabindex="0" name="drink" value="Water" class="mdl-radio__button">
+									<span class="mdl-radio__label">Water</span>
+								</label>
+								<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+									<input type="radio" role="radio" tabindex="0" name="drink" value="Coke" class="mdl-radio__button">
+									<span class="mdl-radio__label">Coke</span>
+								</label>
+								<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+									<input type="radio" role="radio" tabindex="0" name="drink" value="Sprite" class="mdl-radio__button">
+									<span class="mdl-radio__label">Sprite</span>
+								</label>
+								<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+									<input type="radio" role="radio" tabindex="0" name="drink" value="Beer" class="mdl-radio__button">
+									<span class="mdl-radio__label">Beer</span>
+								</label>
+								<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+									<input type="radio" role="radio" tabindex="0" name="drink" value="Bepis" class="mdl-radio__button">
+									<span class="mdl-radio__label">Bepis</span>
+								</label>
+								<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+									<input type="radio" role="radio" tabindex="0" name="drink" value="Dorito Flavored Mountain Dew" class="mdl-radio__button">
+									<span class="mdl-radio__label">Dorito Flavored Mountain Dew</span>
+								</label>
+								<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+									<input type="radio" role="radio" tabindex="0" name="drink" value="Arizona" class="mdl-radio__button">
+									<span class="mdl-radio__label">Arizona</span>
+								</label>
+							</div>
+
+						</div>
+						<div data-page="6" class="hide" data-bg="green" data-page-src="img/menu.jpeg">
+							<h1>Final</h1>
+							<div class="mdl-textfield mdl-js-textfield">
+								<input class="mdl-textfield__input" type="text" id="name00" name="name">
+								<label class="mdl-textfield__label" for="name00">Name...</label>
+							</div>
+
+							<div class="mdl-textfield mdl-js-textfield">
+
+								<textarea class="mdl-textfield__input" type="text" name="message" id="message"></textarea>
+								<label class="mdl-textfield__label" for="message">Questions, comments, concerns?</label>
+							</div>
+							<div style="display: flex; flex-direction: row-reverse">
+								<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btn-green" type="submit">Submit</button>
+								<!--<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect btn-red" type="reset">Clear</button>-->
+							</div>
+						</div>
+					</form>
+					<button class="waves-effect waves-light btn js-arrow mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+					  id="dark-button">
+						<span>Next
+							<i class="material-icons static">arrow_forward</i>
+						</span>
+					</button>
+				</div>
+			</div>
+			<button class="material-icons arrow bwd custom-hide btn grey lighten-3 waves-effect waves-light mdl-button mdl-js-button no-hover-effect">arrow_back</button>
+		</div>
+		<div class="image relative center-flex">
+			<div class="mdl-spinner mdl-js-spinner full-abs"></div>
+			<img src="img/pizza.jpeg" class="dyn-img">
+			<button class="material-icons arrow fwd btn grey lighten-3 waves-effect waves-light mdl-button mdl-js-button mdl-button--raised">arrow_forward</button>
+		</div>
+	</main>
+	<dialog class="mdl-dialog">
+		<div class="mdl-dialog__content">
+			<p>
+				How did you get this up..?
+			</p>
+		</div>
+		<div class="mdl-dialog__actions">
+			<button type="button" class="mdl-button agree mdl-js-button">Agree</button>
+			<button type="button" class="mdl-button close mdl-js-button">Disagree</button>
+		</div>
+	</dialog>
+	<div class="price-total">
+		Total
+		<span>$0.00</span>
+	</div>
+	<script src="main.js" defer></script>
+</body>
+
+</html>
